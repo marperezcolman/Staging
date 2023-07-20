@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.9",
+      "sem_ver" : "0.1.10",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "fccdcac357c1697ddf0391f776ec4ff0",
+      "MD5-CAM-1.0.1" : "a7ea53b08b1d7eb23674bd101e54ee52",
       "PARENT:MD5-CAM-1.0.1" : "A2631943AE15E5BAAE0662A49DAD80C0",
       "original_language" : "ISO_639-1::en"
     },
@@ -721,7 +721,35 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000.1",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0003.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.0.1",
+            "text" : "T stage",
+            "description" : "Assessment of the the extent of the primary tumour.",
+            "comment" : "Coding with a T code appropriate for the tumour type and anatomical site is expected. For example: 'T1'; or 'cT3'. Represented as 'T' or 'cT' in the 'TNM assessment'."
+          },
+          "at0004.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.0.1",
+            "text" : "N stage",
+            "description" : "Assessment of the the absence or presence and extent of regional lymph node metastasis.",
+            "comment" : "Coding with an N code appropriate for the tumour type and anatomical site is expected. For example: 'NX'; or 'cN2'. Represented as 'N' or 'cN' within the 'TNM assessment'."
+          },
+          "at0005.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.0.1",
+            "text" : "M stage",
+            "description" : "Assessment of the absence or presence of distant metastasis.",
+            "comment" : "Coding with an M code appropriate for the tumour type and anatomical site is expected. For example: 'M1'; 'cM1a'; 'M1 PUL'; or 'cM0'. Represented as 'M' or 'cM' within the 'TNM assessment'."
+          },
+          "at0.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1.1",
+            "text" : "S stage",
+            "description" : ""
+          }
+        },
         "nb" : { },
         "de" : { }
       },
