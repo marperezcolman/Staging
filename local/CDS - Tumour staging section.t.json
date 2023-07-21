@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.10",
+      "sem_ver" : "0.1.11",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "a7ea53b08b1d7eb23674bd101e54ee52",
+      "MD5-CAM-1.0.1" : "c4401389a4ce2df5e0ea657357c9c1e7",
       "PARENT:MD5-CAM-1.0.1" : "A2631943AE15E5BAAE0662A49DAD80C0",
       "original_language" : "ISO_639-1::en"
     },
@@ -722,6 +722,13 @@
       "conceptCode" : "at0000.1",
       "termDefinitions" : {
         "en" : {
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1.1",
+            "text" : "TNM stage detail",
+            "description" : "A framework for the clinical classification and stage grouping of malignancies using the TNM system.",
+            "comment" : "Designated as TNM or cTNM."
+          },
           "at0003.0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.0.1",
