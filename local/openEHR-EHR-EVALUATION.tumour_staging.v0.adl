@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9992451817378b72415c7067a0847894">
+		["MD5-CAM-1.0.1"] = <"55b6a1266792ed026357d9c1a447ea1a">
 		["build_uid"] = <"e8273436-dad7-348b-b661-70fa867e9439">
 	>
 
@@ -57,7 +57,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0020] occurrences matches {1..*} matches {    -- Stage detail
+					allow_archetype CLUSTER[at0020] occurrences matches {0..*} matches {    -- Stage detail
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tnm-dhcw\.v1|openEHR-EHR-CLUSTER\.simple_tumour_stage\.v0|openEHR-EHR-CLUSTER\.ann_arbor_stage\.v0/}
 					}
