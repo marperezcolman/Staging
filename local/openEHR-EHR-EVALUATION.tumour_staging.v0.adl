@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"55b6a1266792ed026357d9c1a447ea1a">
+		["MD5-CAM-1.0.1"] = <"158ed6702c7ede7c70a1c28b6e9eabe8">
 		["build_uid"] = <"e8273436-dad7-348b-b661-70fa867e9439">
 	>
 
@@ -71,13 +71,17 @@ definition
 		protocol matches {
 			ITEM_TREE matches {
 				items cardinality matches {0..*; unordered} matches {
-					allow_archetype CLUSTER[at0002] occurrences matches {0..1} matches {    -- Site (recording staging)
-						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.organisation_cc\.v0/}
-					}
-					allow_archetype CLUSTER[at0022] occurrences matches {0..*} matches {    -- Professional (recording staging)
-						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.practitioner_cc\.v0/}
+					CLUSTER[at0026] occurrences matches {0..1} matches {    -- Recording staging
+						items cardinality matches {1..*; unordered} matches {
+							allow_archetype CLUSTER[at0002] occurrences matches {0..1} matches {    -- Site (recording staging)
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.organisation_cc\.v0/}
+							}
+							allow_archetype CLUSTER[at0022] occurrences matches {0..*} matches {    -- Professional (recording staging)
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.practitioner_cc\.v0/}
+							}
+						}
 					}
 				}
 			}
@@ -128,6 +132,10 @@ ontology
 					text = <"Stage">
 					description = <"The field represents the simple stage statement that is commonly understood across tumour sites and across staging systems e.g. Stage 1, Stage 1A etc.  In the case of TNM staging, this is referred to as a stage group.">
 					comment = <"This field represents the code of the applicable / comparable system stage field in the stage detail as applicable to the system selected.">
+				>
+				["at0026"] = <
+					text = <"Recording staging">
+					description = <"">
 				>
 			>
 		>
