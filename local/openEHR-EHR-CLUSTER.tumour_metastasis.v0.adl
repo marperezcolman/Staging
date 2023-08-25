@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"41969b786fd4dd47b81513b74746462b">
+		["MD5-CAM-1.0.1"] = <"328228b251d2020314ca02a7225c45f0">
 		["build_uid"] = <"ed02a84f-c5d8-353d-b7c9-08df68888391">
 	>
 
@@ -38,6 +38,11 @@ definition
 			ELEMENT[at0003] occurrences matches {0..*} matches {    -- Metastatic site
 				value matches {
 					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Other metastatic site
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -57,6 +62,10 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Metastatic site">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Other metastatic site">
 					description = <"">
 				>
 			>
