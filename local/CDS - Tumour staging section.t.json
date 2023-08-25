@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.1.19",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d2511319791964e45c1e6c9a75d16cc4",
+      "MD5-CAM-1.0.1" : "ff544fcb4f739673d3c884fdfa69e250",
       "PARENT:MD5-CAM-1.0.1" : "A2631943AE15E5BAAE0662A49DAD80C0",
       "original_language" : "ISO_639-1::en"
     },
@@ -300,7 +300,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "96b8ed5ba90511d39e0b2a28ba4fbc10"
+        "PARENT:MD5-CAM-1.0.1" : "eff5c47634aaf7f1b6d18bdf39bb2c8d"
       },
       "details" : {
         "de" : {
@@ -680,22 +680,6 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0031.0.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0032.0.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "value",
@@ -1091,7 +1075,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "41969b786fd4dd47b81513b74746462b"
+        "PARENT:MD5-CAM-1.0.1" : "328228b251d2020314ca02a7225c45f0"
       },
       "details" : {
         "en" : {
