@@ -91,7 +91,7 @@ TNM Classification Help (Manual for Cancer Staging); [cited 2019 10 04].  Availa
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"eff5c47634aaf7f1b6d18bdf39bb2c8d">
+		["MD5-CAM-1.0.1"] = <"77612832503c35fe8b0a67ede30f98da">
 		["build_uid"] = <"412f5cad-ddad-4fe4-87ac-21d21bddc86c">
 		["revision"] = <"1.0.0">
 	>
@@ -223,22 +223,17 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0.4] occurrences matches {0..1} matches {    -- TNM edition code
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
 			ELEMENT[at0032.1] occurrences matches {0..1} matches {    -- TNM edition
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0.1] occurrences matches {0..1} matches {    -- Serum tumour markers (S)
+			ELEMENT[at0.4] occurrences matches {0..1} matches {    -- TNM edition code
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0.3] occurrences matches {0..1} matches {    -- TNM system variant
+			ELEMENT[at0.1] occurrences matches {0..1} matches {    -- Serum tumour markers (S)
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -268,9 +263,13 @@ ontology
 					text = <"Pathological staging">
 					description = <"">
 				>
-				["at0.3"] = <
-					text = <"TNM system variant">
+				["at0.4"] = <
+					text = <"TNM edition code">
 					description = <"">
+				>
+				["at0032.1"] = <
+					text = <"TNM edition">
+					description = <"The edition of the TNM classification system used for the assessment.">
 				>
 				["at0000"] = <
 					text = <"TNM clinical classification">
@@ -421,14 +420,6 @@ ontology
 					text = <"TNM Edition">
 					description = <"The edition of the TNM classification system used for the assessment.">
 				>
-				["at0.4"] = <
-					text = <"TNM edition code">
-					description = <"">
-				>
-				["at0032.1"] = <
-					text = <"TNM edition">
-					description = <"The edition of the TNM classification system used for the assessment.">
-				>
 			>
 		>
 		["nb"] = <
@@ -446,9 +437,13 @@ ontology
 					text = <"*Pathological staging (en)">
 					description = <"">
 				>
-				["at0.3"] = <
-					text = <"*TNM system variant (en)">
+				["at0.4"] = <
+					text = <"*TNM edition code (en)">
 					description = <"">
+				>
+				["at0032.1"] = <
+					text = <"*TNM edition (en)">
+					description = <"TNM-utgaven som er brukt for å bestemme TNM-klassifiseringen.">
 				>
 				["at0000"] = <
 					text = <"TNM-klassifikasjon klinisk">
@@ -599,14 +594,6 @@ ontology
 					text = <"TNM-utgave">
 					description = <"TNM-utgaven som er brukt for å bestemme TNM-klassifiseringen.">
 				>
-				["at0.4"] = <
-					text = <"*TNM edition code (en)">
-					description = <"">
-				>
-				["at0032.1"] = <
-					text = <"*TNM edition (en)">
-					description = <"TNM-utgaven som er brukt for å bestemme TNM-klassifiseringen.">
-				>
 			>
 		>
 		["de"] = <
@@ -624,9 +611,13 @@ ontology
 					text = <"*Pathological staging (en)">
 					description = <"">
 				>
-				["at0.3"] = <
-					text = <"*TNM system variant (en)">
+				["at0.4"] = <
+					text = <"*TNM edition code (en)">
 					description = <"">
+				>
+				["at0032.1"] = <
+					text = <"*TNM edition (en)">
+					description = <"Die Auflage, auf der die TNM-Klassifikation basiert, die für die Beurteilung verwendet wurde.">
 				>
 				["at0000"] = <
 					text = <"Klinische TNM-Klassifikation">
@@ -778,14 +769,6 @@ ontology
 				>
 				["at0032"] = <
 					text = <"TNM Auflage">
-					description = <"Die Auflage, auf der die TNM-Klassifikation basiert, die für die Beurteilung verwendet wurde.">
-				>
-				["at0.4"] = <
-					text = <"*TNM edition code (en)">
-					description = <"">
-				>
-				["at0032.1"] = <
-					text = <"*TNM edition (en)">
 					description = <"Die Auflage, auf der die TNM-Klassifikation basiert, die für die Beurteilung verwendet wurde.">
 				>
 			>
