@@ -23,18 +23,13 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"68bc7f9ff1fbeb14a154e5132119504b">
+		["MD5-CAM-1.0.1"] = <"fe44ba7ac7d8ed5c9facc1299f965905">
 		["build_uid"] = <"6b8324c3-62cc-37ff-af86-76ae6a433c00">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Simple stage detail
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- System variant
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
 			ELEMENT[at0001] matches {    -- System stage
 				value matches {
 					DV_TEXT matches {*}
@@ -53,10 +48,6 @@ ontology
 				>
 				["at0001"] = <
 					text = <"System stage">
-					description = <"">
-				>
-				["at0002"] = <
-					text = <"System variant">
 					description = <"">
 				>
 			>
