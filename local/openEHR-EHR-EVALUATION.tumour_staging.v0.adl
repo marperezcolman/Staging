@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"158ed6702c7ede7c70a1c28b6e9eabe8">
+		["MD5-CAM-1.0.1"] = <"98e1ea90e0cf5af9a74e2934169eeb10">
 		["build_uid"] = <"e8273436-dad7-348b-b661-70fa867e9439">
 	>
 
@@ -42,7 +42,12 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Staging system
+					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Staging system classification
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Staging system variant
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -121,7 +126,7 @@ ontology
 					description = <"">
 				>
 				["at0023"] = <
-					text = <"Staging system">
+					text = <"Staging system variant">
 					description = <"">
 				>
 				["at0024"] = <
@@ -135,6 +140,10 @@ ontology
 				>
 				["at0026"] = <
 					text = <"Recording staging">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Staging system classification">
 					description = <"">
 				>
 			>
