@@ -23,14 +23,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"98e1ea90e0cf5af9a74e2934169eeb10">
+		["MD5-CAM-1.0.1"] = <"7444d03789c4c33121beb89fb8973487">
 		["build_uid"] = <"e8273436-dad7-348b-b661-70fa867e9439">
 	>
 
 definition
 	EVALUATION[at0000] matches {    -- Tumour staging
 		data matches {
-			ITEM_TREE matches {
+			ITEM_TREE[at0004] matches {    -- ITEM_TREE
 				items cardinality matches {0..*; unordered} matches {
 					ELEMENT[at0001] matches {    -- Stage date
 						value matches {
@@ -74,7 +74,7 @@ definition
 			}
 		}
 		protocol matches {
-			ITEM_TREE matches {
+			ITEM_TREE[at0005] matches {    -- ITEM_TREE
 				items cardinality matches {0..*; unordered} matches {
 					CLUSTER[at0026] occurrences matches {0..1} matches {    -- Recording staging
 						items cardinality matches {1..*; unordered} matches {
@@ -144,6 +144,14 @@ ontology
 				>
 				["at0027"] = <
 					text = <"Staging system classification">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"ITEM_TREE">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"ITEM_TREE">
 					description = <"">
 				>
 			>
