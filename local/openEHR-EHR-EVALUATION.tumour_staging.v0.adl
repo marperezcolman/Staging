@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7444d03789c4c33121beb89fb8973487">
+		["MD5-CAM-1.0.1"] = <"17418e05160495a6e700550602851282">
 		["build_uid"] = <"e8273436-dad7-348b-b661-70fa867e9439">
 	>
 
@@ -69,6 +69,11 @@ definition
 					allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Metastasis
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_metastasis\.v0/}
+					}
+					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Tumour site
+						value matches {
+							DV_TEXT matches {*}
+						}
 					}
 				}
 			}
@@ -152,6 +157,10 @@ ontology
 				>
 				["at0005"] = <
 					text = <"ITEM_TREE">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Tumour site">
 					description = <"">
 				>
 			>
